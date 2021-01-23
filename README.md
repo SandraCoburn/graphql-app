@@ -1,2 +1,3 @@
-# graphql-app
+# graphql-app frontend
+
 GRAPHQL Practice
