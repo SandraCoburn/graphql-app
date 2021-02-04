@@ -41,7 +41,7 @@ const StyledHeader = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     @media (max-width: 1300px) {
       grid-template-columns: 1fr;
       justify-content: center;
@@ -61,7 +61,7 @@ const Header = () => {
         <Logo>
           <Link href="/">
             {/* <img src={LogoImg} alt="Bakery Logo" /> */}
-            <a> The Midnight Bakery</a>
+            The Midnight Bakery
           </Link>
         </Logo>
         <Nav />
