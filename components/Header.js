@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Nav from './Nav';
 import Router from 'next/router';
 import NProgress from 'nprogress';
-// import LogoImg from '../static/midnight-bakery.jpg';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -18,14 +17,14 @@ Router.onRouteChangeError = () => {
 };
 
 const Logo = styled.h1`
-  font-size: 4rem;
-  margin-left: 2rem;
+  font-size: 3rem;
+  margin-left: 1rem;
   position: relative;
   z-index: 2;
   transform: skew(-7deg);
+  background: ${(props) => props.theme.green};
   a {
     padding: 0.5rem 1rem;
-    background: ${(props) => props.theme.green};
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -41,7 +40,7 @@ const StyledHeader = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     @media (max-width: 1300px) {
       grid-template-columns: 1fr;
       justify-content: center;
@@ -59,10 +58,7 @@ const Header = () => {
     <StyledHeader>
       <div className="bar">
         <Logo>
-          <Link href="/">
-            {/* <img src={LogoImg} alt="Bakery Logo" /> */}
-            The Midnight Bakery
-          </Link>
+          <Link href="/">The Midnight Bakery</Link>
         </Logo>
         <Nav />
       </div>

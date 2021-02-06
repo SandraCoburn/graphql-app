@@ -1,23 +1,18 @@
 import Link from 'next/link';
 import NavStyles from './styles/NavStyles';
+// import LogoImg from '../static/midnight-bakery.jpg';
 const Nav = () => {
   return (
     <NavStyles>
-      <Link href="/items">
-        <a>Items</a>
-      </Link>
-      <Link href="/sell">
-        <a>Sell</a>
-      </Link>
-      <Link href="/signup">
-        <a>Signup</a>
-      </Link>
-      <Link href="/orders">
-        <a>Orders</a>
-      </Link>
-      <Link href="/me">
-        <a>Acount</a>
-      </Link>
+      {/* <Link>
+        {' '}
+        <img src={LogoImg} alt="Bakery Logo" />
+      </Link> */}
+      <Link href="/items">Items</Link>
+      <Link href="/sell">Sell</Link>
+      <Link href="/signup">Signup</Link>
+      <Link href="/orders">Orders</Link>
+      <Link href="/me">Acount</Link>
     </NavStyles>
   );
 };
